@@ -9,7 +9,7 @@ public class Product:EntityBase
     public decimal Price { get; set; }
     public decimal Discount { get; set; }
     public int BrandId { get; set; }
-    public required Brand Brand { get; set; }
+    public  Brand Brand { get; set; }
     
-    public  required ICollection<Category> Categories{ get; set; }  //çoka çok ilişki
+    public   ICollection<Category> Categories{ get; set; }  //çoka çok ilişki
 }

@@ -2,13 +2,13 @@
 
 namespace Onion.Domain.Entities;
 
-public  class Detail(string title,string description,int categoryId):EntityBase
+public  class Detail:EntityBase
 {
-    public required string Title { get; set; } = title;
-    public required string Description { get; set; } = description;
+    public required string Title { get; set; } 
+    public required string Description { get; set; }
 
     #region Relation
-    public int CategoryId { get; set; } = categoryId;
-    public required Category Category { get; set; } 
+    public int CategoryId { get; set; }
+    public  Category Category { get; set; } 
     #endregion
 }
